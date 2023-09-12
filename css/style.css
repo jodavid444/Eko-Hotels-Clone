@@ -1,0 +1,57 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+--info-a-text: #043040;
+--info-bg: #FFFFFF;
+--dining-bg: #f8f8f8;
+--hakun-bg: #E1EEF9;
+
+--footer-bg: #1E2529;
+
+--about-text: #333333;
+
+
+
+
+
+
+  --info-link: #cda274;
+  --welcome-text: #043040;
+  --eko-hotel:  #cda274;
+}
+
+
+.custom-loader {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  border:4px solid #0000;
+  border-radius: 50%;
+  border-color:#043040 #0000;
+  animation: s6 1s infinite linear;
+}
+.custom-loader::before,
+.custom-loader::after {    
+  content:"";
+  grid-area: 1/1;
+  margin:2px;
+  border:inherit;
+  border-radius: 50%;
+}
+.custom-loader::before {
+  border-color:#CDA274 #0000;
+  animation:inherit; 
+  animation-duration: .5s;
+  animation-direction: reverse;
+}
+.custom-loader::after {
+  margin:8px;
+}
+
+@keyframes s6 { 
+  100%{transform: rotate(1turn)}
+}
